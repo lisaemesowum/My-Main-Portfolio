@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+.chervon {
+  /* background-color: blue; */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  width: 40px; /* Fixed width for the button */
+  height: 40px;
+}
+
+.mobile-nav {
+  /* background-color: aqua; */
+  position: relative;
+  z-index: 999;
+  display: none;
+}
+.drop-down {
+  position: absolute;
+  top: 124%;
+  height: 300px;
+  right: -40px;
+  z-index: 999;
+  width: 250px;
+  background-color: blue;
+  list-style: none;
+  padding: 14px 20px;
+  margin: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: -400px;
+  background-image: url(../assets/coolbackgrounds-unsplash-zeller.jpg);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); */
+}
+
+.nav-item1 {
+  position: relative;
+  display: inline-block;
+  /* padding-bottom: 4px; */
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  font-family: "Winky Sans", sans-serif;
+  padding: 10px 0;
+}
+
+.nav-item1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 3px;
+  width: 0;
+  /* background-color:gold; */
+  /* background: linear-gradient(#2325, #414345); */
+  background: linear-gradient(to right, #0c0e11, #f8f7f9, #1e1e1e);
+  transition: width 0.3s ease;
+}
+
+.nav-item1:hover::after {
+  width: 100%;
+}
+
+/* When the link is active */
+.active-nav1 {
+  color: white;
+}
+
+.active-nav1::after {
+  width: 100%;
+}
+/* =============for iphone 11 pro==================================== */
+@media screen and (max-width: 430px) {
+  .Right-area {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+
+  .Nav-area {
+    padding: 15px 20px;
+    align-items: center;
+  }
+  .Nav-area {
+    display: flex;
+    max-width: 100%;
+  }
+  .my-introduction-name {
+    font-size: 15px;
+  }
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      width: 394px;
+      padding: 10px 30px;
+  }
+}
