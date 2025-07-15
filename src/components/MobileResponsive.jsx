@@ -5,14 +5,16 @@ import { FaAlignRight } from "react-icons/fa";
 const MobileResponsive = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
+   <>
+    {menuOpen && <div className="overlay-blur" onClick={() => setMenuOpen(false)}></div>}
     <div className="mobile-nav">
       <button className="chervon" onClick={() => setMenuOpen(!menuOpen)}>
-        <FaAlignRight />
+        <FaAlignRight className={menuOpen ? "rotate-icon" : ""}/>
       
       </button>
       
       {/* mobile Links */}
-      {menuOpen && (
+      {menuOpen &&  (
         <ul className="drop-down">
           <li>
             <NavLink
@@ -78,6 +80,7 @@ const MobileResponsive = () => {
         </ul>
       )}
     </div>
+   </>
   );
 };
 

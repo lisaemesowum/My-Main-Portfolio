@@ -1,0 +1,238 @@
+@import url('https://fonts.cdnfonts.com/css/zuriah');
+.home-container{
+  color: white;
+    position: relative;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+   padding-top: 100px; 
+   z-index: -1;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send it behind all content */
+}
+.HomeContent{
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    /* height: 90vh; */
+    flex-wrap: wrap;
+}
+.Home-name{
+    display: flex;
+    width: 50%;
+     flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-photo{
+    width: 50%;
+     justify-content: center;
+  align-items: center;
+}
+.welcome-div{
+    /* background-color: red; */
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+    font-family: 'ZURIAH', sans-serif;
+    font-size: 20px;
+}
+.welcome-div span{
+   color: blue;
+}
+@import url('https://fonts.cdnfonts.com/css/senmoly-caligan');
+
+.myName{
+    margin-bottom: 20px;
+    padding-left: 20px;
+   font-family: 'Senmoly Caligan', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    /* box-shadow: 
+  inset 5px 5px 10px #f8f7f9, 
+  inset -5px -5px 10px  blue ; */
+}
+
+.myName span{
+      color: blue;
+}
+.paragraph{
+    width: 630px;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 35px;
+}
+
+
+/* =====================right-side */
+.lisa{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+    border-radius: 60%;
+   box-shadow: 
+    0 8px 20px blue;
+  overflow: hidden;
+  /* filter: blur(9px); */
+}
+
+
+/*  */
+@media screen and (max-width: 769px) {
+  .HomeContent {
+    flex-direction: column;
+  }
+
+  .Home-name,
+  .my-photo {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .paragraph {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .myName {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .welcome-div {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .lisa {
+    width: 90%;
+    /* max-width: 250px; */
+    margin-top: 20px;
+    border-radius: 50%;
+   
+  }
+  .my-photo{
+    padding: 10px 20px;
+    position: absolute;
+    top:33%;
+    left: 5%;
+  }
+}
+
+
+/* =============for iphone 11 pro==================================== */
+@media screen and (max-width: 430px) {
+    .lisa {
+    width: 90%;
+    height: 300px;
+    /* max-width: 250px; */
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+  .my-photo{
+    padding: 10px 20px;
+    position: absolute;
+    top:60%;
+    left: 5%;
+  }
+  .paragraph{
+    font-size: 12px;
+  }
+   .myName {
+    font-size: 18px;
+    text-align: center;
+  }
+
+}
+/* =======iphone se=========== */
+@media screen and (max-width: 380px) {
+    .lisa {
+    width: 90%;
+    height: 250px;
+    /* max-width: 250px; */
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+  .my-photo{
+    padding: 10px 20px;
+    position: absolute;
+    top:60%;
+    left: 5%;
+  }
+  .paragraph{
+    font-size: 12px;
+    margin-top: -10px;
+    line-height:23px;
+  }
+   .myName {
+    font-size: 18px;
+    text-align: center;
+  }
+
+}
+/* =================xr============ */
+
+@media screen and (max-width: 415px) {
+ .lisa {
+    width: 90%;
+    height: 280px;
+    /* max-width: 250px; */
+    margin-top: 5px;
+    border-radius: 50px;
+  }
+  .my-photo{
+    padding: 10px 20px;
+    position: absolute;
+    top:57%;
+    left: 5%;
+  }
+  .paragraph{
+    font-size: 15px;
+    margin-top: -10px;
+  }
+   .myName {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================responsive ===================================== */
+/* @media screen and (max-width: 768px) {
+  .HomeContent {
+    flex-direction: column;
+  }
+
+  .Home-name,
+  .Home-name1 {
+    width: 100%;
+  }
+
+  .Home-name {
+    order: 1; text goes on top
+  }
+
+  .Home-name1 {
+    order: 2; image goes below
+  }
+} */

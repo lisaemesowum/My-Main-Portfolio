@@ -21,14 +21,15 @@
   background-repeat: no-repeat;
   background-position: -10px;
   background-image: url(../assets/coolbackgrounds-unsplash-zeller.jpg);
-  /* background: linear-gradient(#2325, #414345); */
-  /* background: linear-gradient(to right, #0f172a, #4b0082, #000000); */
+ box-shadow: 
+  inset 5px 5px 10px #f8f7f9, 
+  inset -5px -5px 10px  blue ;
 }
 .my-introduction-name {
   /* background-color: aqua; */
   font-size: 20px;
- /* position: relative;
- top:-6px; */
+ position: relative;
+ top:-6px;
 }
 .Right-area {
   /* background-color: red; */
@@ -77,14 +78,22 @@
   padding: 7px 30px;
   background: linear-gradient(to right, #f8f7f995, #0c0e11, #1e1e1e);
   color: white;
-  border: 2px solid white;
+  border: 3px solid blue;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Winky Sans", sans-serif;
+  
+}
+.nav-button:hover{
+   box-shadow: 
+  inset 10px 10px 15px #f8f7f9, 
+  inset -10px -10px 15px  blue ;
+  color: black;
+ transition-timing-function: steps(3);
 }

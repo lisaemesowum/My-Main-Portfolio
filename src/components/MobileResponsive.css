@@ -16,7 +16,14 @@ body {
   width: 40px; /* Fixed width for the button */
   height: 40px;
 }
-
+.overlay-blur{
+   position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+}
 .mobile-nav {
   /* background-color: aqua; */
   position: relative;
@@ -39,6 +46,24 @@ body {
   background-position: -400px;
   background-image: url(../assets/coolbackgrounds-unsplash-zeller.jpg);
   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); */
+    animation: slideDown 0.9s ease;
+
+}
+@keyframes slideDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-10%);
+    max-height: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
+.rotate-icon {
+  transform: rotate(90deg);
+  transition: transform 0.9s ease;
 }
 
 .nav-item1 {
@@ -51,8 +76,21 @@ body {
   color: white;
   font-family: "Winky Sans", sans-serif;
   padding: 10px 0;
+    animation: slide 1.9s ease;
+  transition: transform 0.9s ease;
 }
-
+@keyframes slide{
+  0% {
+    opacity: 1;
+    transform: translateY(15%);
+    max-height: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
 .nav-item1::after {
   content: "";
   position: absolute;
@@ -101,7 +139,179 @@ body {
   .drop-down {
     position: absolute;
     top: 137%;
-      width: 394px;
-      padding: 10px 30px;
+      /* width: 394px; */
+       width: 110vw;
+      padding: 12px 38px;
+      height: 320px;
+      
+  }
+  .nav-item1{
+     margin-bottom:9px;
+  }
+}
+/* =======iphone se=========== */
+@media screen and (max-width: 380px) {
+     .my-introduction-name {
+    font-size: 13px;
+  }
+  .Nav-area {
+    padding: 12px 20px;
+    align-items: center;
+  }
+  .nav-item1{
+    font-size: 14px;
+    margin-bottom:8px;
+  }
+}
+
+/*====================== ipad mini======================================== */
+@media screen and (max-width: 769px) {
+  .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; 
+  }
+
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 100vw;
+      padding: 15px 60px;
+      height: 320px;
+      
+  }
+   .nav-item1{
+    font-size: 17px;
+    margin-bottom:8px;
+  }
+}
+
+/* =======================ipad air================================ */
+@media screen and (max-width: 834px) {
+ .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; /* Show mobile menu */
+  }
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 100vw;
+      padding: 15px 60px;
+      height: 320px;
+
+  }
+   .nav-item1{
+    font-size: 17px;
+    margin-bottom:8px;
+  }
+}
+/* =======================surface pro 7=================================== */
+@media screen and (max-width: 914px) {
+    .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; /* Show mobile menu */
+  }
+
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 100vw;
+      padding: 15px 60px;
+      height: 360px;
+      
+  }
+   .nav-item1{
+    font-size: 21px;
+    margin-bottom:8px;
+  }
+
+}
+/* ============================927 width====================================== */
+@media screen and (max-width: 928px) {
+    .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; /* Show mobile menu */
+  }
+
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 100vw;
+      padding: 15px 60px;
+      height: 360px;
+      
+  }
+   .nav-item1{
+    font-size: 21px;
+    margin-bottom:8px;
+  }
+
+}
+/* ==========================smaller phone========================== */
+@media screen and (max-width: 220px) {
+      .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; /* Show mobile menu */
+  }
+
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 120vw;
+      padding: 15px 60px;
+      height: 360px;
+      
+  }
+   .nav-item1{
+    font-size: 10px;
+    margin-bottom:8px;
+  }
+    .my-introduction-name {
+    font-size: 10px;
+  }
+}
+
+/* ====================more smaller============ */
+@media screen and (max-width: 156px) {
+      .Right-area {
+    display: none; /* Hide desktop nav */
+  }
+  .mobile-nav {
+    display: block; /* Show mobile menu */
+  }
+
+  .drop-down {
+    position: absolute;
+    top: 137%;
+      /* width: 394px; */
+       width: 120vw;
+      padding: 15px 60px;
+      height: 360px;
+      /* left: -19px; */
+      
+  }
+   .nav-item1{
+    font-size: 10px;
+    margin-bottom:8px;
+  }
+    .my-introduction-name {
+    font-size: 6px;
+  }
+  .chervon{
+    font-size: 10px;
   }
 }
